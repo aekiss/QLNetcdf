@@ -29,7 +29,8 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
         */
         NSTask *task;
         task = [[NSTask alloc] init];
-        [task setLaunchPath: @"/usr/local/bin/ncdump"];
+//        [task setLaunchPath: @"/usr/local/bin/ncdump"];  // homebrew
+        [task setLaunchPath: @"/opt/local/bin/ncdump"];  // macports
 
         NSArray *arguments;
         arguments = [NSArray arrayWithObjects: @"-h", filepath, nil];
