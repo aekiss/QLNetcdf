@@ -17,7 +17,7 @@ __QLNetcdf requires that `ncdump` is installed at `/opt/local/bin/ncdump`__
 
 Fortunately if you installed `netcdf` using [MacPorts](https://www.macports.org) (with the default settings) then `ncdump` should exist in the correct location already. 
 
-Then all you need to do is copy the prebuilt executable `QLNetcdf.qlgenerator` from `bin` to your `~/Library/QuickLook/` directory (or `/Library/QuickLook/` to make the plugin available to all users).
+Then all you need to do is `git clone https://github.com/aekiss/QLNetcdf.git`, open `QLNetcdf.dmg` and copy the prebuilt executable `QLNetcdf.qlgenerator` to your `~/Library/QuickLook/` directory (or `/Library/QuickLook/` to make the plugin available to all users).
 
 You may have to force the QuickLook Server to reload so it picks up the new generator:
 
